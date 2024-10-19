@@ -1,0 +1,103 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+ /* background-image: url('public/images/eco-background.jpg');  Eco-friendly background image */
+  background-size: cover;  /* Make sure the image covers the entire screen */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Make the background fixed when scrolling */
+  color: #ffffff; /* White text for contrast */
+}
+
+/* Navbar styling */
+nav {
+  background-color: #9db96a; /* Dark green for navbar */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+  color: white;
+}
+
+/* Links */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+  position: 100vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #c3c284; /* Footer background */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Card styles */
+.card {
+  background-color: #424242; /* Card background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+button {
+  background-color: #81c784; /* Light green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #66bb6a; /* Darker light green on hover */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #ee6719; /* White text for headings */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .card {
+      width: 100%; /* Make cards full width on small screens */
+  }
+}
